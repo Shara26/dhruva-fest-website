@@ -9,7 +9,6 @@ body {
     background-color: #f4f4f4;
 }
 
-/* Header */
 .header {
     background-color: #111;
     color: white;
@@ -21,7 +20,7 @@ body {
     font-size: 40px;
 }
 
-/* Navbar */
+
 .navbar {
     background-color: #222;
     text-align: center;
@@ -39,7 +38,7 @@ body {
     text-decoration: underline;
 }
 
-/* Main content */
+
 .main-content {
     padding: 40px;
     text-align: center;
@@ -49,7 +48,7 @@ body {
     margin-bottom: 15px;
 }
 
-/* Footer */
+
 .footer {
     background-color: #111;
     color: white;
