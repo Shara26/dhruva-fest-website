@@ -97,3 +97,26 @@ body {
     background-color: #ddd;
 }
 
+.content {
+    padding: 40px;
+    max-width: 900px;
+    margin: auto;
+}
+
+.content h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.content p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.credit {
+    font-size: 14px;
+    margin-top: 5px;
+    opacity: 0.8;
+}
+
+
