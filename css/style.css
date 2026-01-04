@@ -119,4 +119,32 @@ body {
     opacity: 0.8;
 }
 
+.events-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.event-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 6px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.event-card h3 {
+    margin-bottom: 10px;
+}
+
+.event-card p {
+    margin-bottom: 8px;
+}
+
+.event-date {
+    font-weight: bold;
+    color: #555;
+}
+
+
 
