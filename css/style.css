@@ -17,6 +17,8 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     background: var(--bg-gradient);
     color: var(--text-light);
+    position: relative;
+    overflow-x: hidden;
 }
 
 .header {
@@ -207,6 +209,69 @@ body {
     margin-top: 60px;
     color: var(--muted);
 }
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background-image:
+        radial-gradient(1px 1px at 10% 20%, rgba(255,255,255,0.8), transparent),
+        radial-gradient(1px 1px at 30% 80%, rgba(255,255,255,0.6), transparent),
+        radial-gradient(1px 1px at 50% 40%, rgba(255,255,255,0.7), transparent),
+        radial-gradient(1px 1px at 70% 60%, rgba(255,255,255,0.5), transparent),
+        radial-gradient(1px 1px at 90% 30%, rgba(255,255,255,0.6), transparent);
+    opacity: 0.6;
+    pointer-events: none;
+    z-index: 0;
+}
+
+
+.highlights {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.highlight-box h3 {
+    font-size: 48px;
+    color: var(--accent);
+    text-shadow: 0 0 15px rgba(127, 92, 255, 0.7);
+}
+
+.highlight-box p {
+    font-size: 16px;
+    margin-top: 5px;
+    color: var(--muted);
+    letter-spacing: 1px;
+}
+
+.stars {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 2px;
+    height: 2px;
+    background: white;
+    box-shadow:
+        100px 200px white,
+        300px 400px white,
+        500px 100px white,
+        700px 300px white,
+        900px 500px white,
+        1100px 200px white,
+        1300px 600px white,
+        1500px 100px white,
+        1700px 400px white,
+        1900px 250px white;
+    opacity: 0.8;
+    z-index: 0;
+    pointer-events: none;
+}
+
+
+
 
 
 
