@@ -14,12 +14,13 @@
 
 body {
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
     background: var(--bg-gradient);
     color: var(--text-light);
     position: relative;
     overflow-x: hidden;
 }
+
 
 .header {
     text-align: center;
@@ -32,8 +33,17 @@ body {
     text-shadow: 0 0 15px rgba(127, 92, 255, 0.6);
 }
 
+p {
+    line-height: 1.7;
+}
+
+
 .header p {
     color: var(--muted);
+}
+
+h1, h2, h3 {
+    letter-spacing: 0.5px;
 }
 
 
@@ -52,6 +62,7 @@ body {
     text-decoration: none;
     font-weight: 500;
     position: relative;
+    transition: color 0.25s ease;
 }
 
 .navbar a::after {
@@ -67,6 +78,11 @@ body {
 
 .navbar a:hover::after {
     width: 100%;
+    
+}
+
+.navbar a:hover {
+    color: var(--accent);
 }
 
 
@@ -123,8 +139,9 @@ body {
     text-decoration: none;
     font-weight: bold;
     box-shadow: 0 0 20px rgba(127, 92, 255, 0.7);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+   transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
 }
+
 
 .hero-btn:hover {
     transform: translateY(-4px);
@@ -269,6 +286,14 @@ body::before {
     z-index: 0;
     pointer-events: none;
 }
+
+section {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+
+
 
 
 
