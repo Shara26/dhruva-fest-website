@@ -354,6 +354,15 @@ section {
     color: var(--muted);
 }
 
+.countdown {
+    margin-top: 15px;
+    font-size: 14px;
+    font-weight: bold;
+    color: var(--accent);
+    text-shadow: 0 0 10px rgba(127, 92, 255, 0.8);
+}
+
+
 
 
 
