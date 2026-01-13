@@ -614,5 +614,212 @@ body {
     color: #22c55e;
 }
 
+.team-section {
+    padding: 160px 80px;
+    background: #000;
+    color: #fff;
+    text-align: center;
+}
+
+.team-title {
+    font-size: 52px;
+    margin-bottom: 60px;
+    letter-spacing: 2px;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 40px;
+}
+
+.team-card {
+    padding: 26px;
+    background: rgba(255,255,255,0.06);
+    border-radius: 14px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-card h3 {
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+.team-card p {
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: #a855f7;
+}
+
+.team-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 0 18px rgba(168,85,247,0.4);
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+    padding: 18px 60px;
+
+    background: linear-gradient(
+        180deg,
+        rgba(0,0,0,0.85),
+        rgba(0,0,0,0.35)
+    );
+    backdrop-filter: blur(10px);
+}
+.nav-left-links a,
+.nav-right-links a {
+    color: #ffffff;
+    font-weight: 600;
+    opacity: 0.95;
+}
+
+
+
+.navbar a {
+    color: #ffffff;
+    opacity: 0.85;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    opacity: 1;
+    color: #ffd84d;
+    text-shadow: 0 0 12px rgba(255, 216, 77, 0.8);
+}
+
+.team-section {
+    min-height: 100vh;
+    padding-top: 120px;
+    background: radial-gradient(
+        circle at top,
+        rgba(255,255,255,0.06),
+        rgba(0,0,0,1) 60%
+    );
+    color: white;
+    text-align: center;
+}
+.team-hero-text {
+    padding: 120px 20px;
+}
+
+.team-hero-text h1 {
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+.team-role {
+    margin-bottom: 100px;
+}
+
+.team-role h2 {
+    font-size: 38px;
+    margin-bottom: 24px;
+}
+
+.team-role p {
+    font-size: 18px;
+    line-height: 2.2;
+    opacity: 0.85;
+}
+
+.team-section {
+    min-height: 100vh;
+    padding-top: 120px;
+    background: radial-gradient(
+        circle at top,
+        rgba(255,255,255,0.06),
+        rgba(0,0,0,1) 60%
+    );
+    color: white;
+    text-align: center;
+}
+
+.team-tabs {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 40px 0 120px;
+}
+
+.team-tabs button {
+    background: transparent;
+    border: 1px solid rgba(255,255,255,0.6);
+    color: white;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.team-tabs .active {
+    border-color: white;
+}
+
+.team-hero-text {
+    padding: 120px 20px;
+}
+
+.team-hero-text h1 {
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.team-role {
+    margin-bottom: 100px;
+}
+
+.team-role h2 {
+    font-size: 38px;
+    margin-bottom: 24px;
+}
+
+.team-role p {
+    font-size: 18px;
+    line-height: 2.2;
+    opacity: 0.85;
+}
+
+.team-section::before,
+.team-section::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+}
+
+.team-section::before {
+    background-image:
+        radial-gradient(circle at 15% 30%, rgba(255,255,255,0.08), transparent 40%),
+        radial-gradient(circle at 85% 40%, rgba(255,255,255,0.06), transparent 45%),
+        radial-gradient(circle at 50% 80%, rgba(255,255,255,0.05), transparent 40%);
+}
+
+.team-hero-text h1 {
+    font-size: 72px;
+    font-weight: 800;
+    letter-spacing: -1px;
+}
+.team-role h2 {
+    font-size: 42px;
+}
+
+.team-role p {
+    font-size: 20px;
+}
+
+body {
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+
+
+
+
 
 
