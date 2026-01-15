@@ -1,97 +1,272 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Events | Dhruva 2026</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <title>Events | Dhruva 2026</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
- <nav class="navbar">
-  <div class="navbar-inner">
+<!-- ================= NAVBAR ================= -->
+<nav class="navbar">
+  <ul class="nav-left">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="proshows.html">Pro Shows</a></li>
+  </ul>
 
-  
-    <div class="nav-left">
-      <img src="assets/images/i2it-logo.png" class="nav-college-logo" alt="I2IT Logo">
+  <div class="nav-logo">
+    <img src="assets/images/dhruva-logo.png" alt="Dhruva Logo">
+  </div>
+
+  <ul class="nav-right">
+    <li><a href="events.html" class="glow">Events</a></li>
+    <li><a href="sponsors.html">Sponsors</a></li>
+    <li><a href="team.html">Team</a></li>
+  </ul>
+</nav>
+
+<!-- Cosmic Stars Background -->
+<div class="stars"></div>
+<div class="stars2"></div>
+<div class="stars3"></div>
+
+<!-- ================= EVENTS SECTION ================= -->
+<section class="events-section">
+  <h1 class="events-title">Events</h1>
+
+  <!-- Day Tabs -->
+  <div class="day-tabs">
+    <button class="day-btn active" onclick="showDay(1)">Day 1 · 28 Jan</button>
+    <button class="day-btn" onclick="showDay(2)">Day 2 · 29 Jan</button>
+    <button class="day-btn" onclick="showDay(3)">Day 3 · 30 Jan</button>
+  </div>
+
+  <!-- ================= DAY 1 ================= -->
+  <div class="events-day active-day" id="day1">
+
+    <div class="event-card">
+      <img src="assets/images/robo.jpg">
+      <div class="event-info">
+        <h3>Robo Race</h3>
+        <p>⏰ 8:30 AM – 11:00 AM</p>
+        <p>📍 Ground Floor, Academic Building</p>
+      </div>
     </div>
 
-   
-    <div class="nav-center">
-      <a href="index.html" class="nav-link">Home</a>
-      <a href="proshows.html" class="nav-link pro">Pro Shows</a>
+    <div class="event-card">
+      <img src="assets/images/cinema.jpg">
+      <div class="event-info">
+        <h3>Cinema Day</h3>
+        <p>⏰ 8:30 AM – 11:30 AM</p>
+        <p>📍 Library & Parking Space</p>
+      </div>
+    </div>
 
-      <img src="assets/images/dhruva-logo.png" class="nav-dhruva-logo" alt="Dhruva Logo">
+    <div class="event-card">
+      <img src="assets/images/treasure.jpg">
+      <div class="event-info">
+        <h3>Treasure Hunt</h3>
+        <p>⏰ 11:30 AM – 1:30 PM</p>
+        <p>📍 Whole Campus</p>
+      </div>
+    </div>
 
-      <a href="events.html" class="nav-link events active">Events</a>
-      <a href="sponsors.html" class="nav-link">Sponsors</a>
-      <a href="team.html" class="nav-link">Team</a>
+    <div class="event-card">
+      <img src="assets/images/hackathon.jpg">
+      <div class="event-info">
+        <h3>Hackathon</h3>
+        <p>⏰ 11:00 AM – 2:00 PM</p>
+        <p>📍 PPCRC</p>
+      </div>
+    </div>
+
+    <div class="event-card">
+      <img src="assets/images/ewaste.jpg">
+      <div class="event-info">
+        <h3>E-Waste to Craft</h3>
+        <p>⏰ 2:00 PM – 4:00 PM</p>
+        <p>📍 1st Floor D Section</p>
+      </div>
+    </div>
+
+    <div class="event-card">
+      <img src="assets/images/bgmi.jpg">
+      <div class="event-info">
+        <h3>BGMI</h3>
+        <p>⏰ 2:00 PM – 5:00 PM</p>
+        <p>📍 A-214</p>
+      </div>
+    </div>
+
+    <div class="event-card">
+      <img src="assets/images/valorant.jpg">
+      <div class="event-info">
+        <h3>Valorant</h3>
+        <p>⏰ 2:00 PM – 5:00 PM</p>
+        <p>📍 Online</p>
+      </div>
+    </div>
+
+    <div class="event-card">
+      <img src="assets/images/mehfil.jpg">
+      <div class="event-info">
+        <h3>Mehfil Night</h3>
+        <p>⏰ 6:00 PM – 8:30 PM</p>
+        <p>📍 Amphitheater</p>
+      </div>
     </div>
 
   </div>
-</nav>
 
+  <!-- ================= DAY 2 ================= -->
+  <div class="events-day" id="day2">
 
+    <div class="event-card">
+      <img src="assets/images/traditional.jpg">
+      <div class="event-info">
+        <h3>Granth Dindi & Traditional Day</h3>
+        <p>⏰ 8:30 AM – 11:30 AM</p>
+        <p>📍 Library & Parking Space</p>
+      </div>
+    </div>
 
+    <div class="event-card">
+      <img src="assets/images/dhwani.jpg">
+      <div class="event-info">
+        <h3>Dhwani</h3>
+        <p>⏰ 11:30 AM – 1:30 PM</p>
+        <p>📍 Academic Block (Ground Floor)</p>
+      </div>
+    </div>
 
+    <div class="event-card">
+      <img src="assets/images/codetocrack.jpg">
+      <div class="event-info">
+        <h3>Code to Crack</h3>
+        <p>⏰ 1:30 PM – 3:30 PM</p>
+        <p>📍 A-213</p>
+      </div>
+    </div>
 
-    <section class="events-section">
-        <h2 class="section-title">Events</h2>
+    <div class="event-card">
+      <img src="assets/images/flashmob.jpg">
+      <div class="event-info">
+        <h3>Flash Mob</h3>
+        <p>⏰ 4:00 PM – 4:30 PM</p>
+        <p>📍 Parking Space</p>
+      </div>
+    </div>
 
-        <div class="day-tabs">
-            <button class="day-tab active" data-day="day1">Day 1 · 28 Jan</button>
-            <button class="day-tab" data-day="day2">Day 2 · 29 Jan</button>
-            <button class="day-tab" data-day="day3">Day 3 · 30 Jan</button>
-        </div>
+    <div class="event-card">
+      <img src="assets/images/bandwars.jpg">
+      <div class="event-info">
+        <h3>Band Wars</h3>
+        <p>⏰ 5:30 PM – 6:30 PM</p>
+        <p>📍 Stage</p>
+      </div>
+    </div>
 
-        <div class="events-grid active" id="day1">
-            <div class="event-card">
-                <h3>MEHFIL Night</h3>
-                <p>Evening · Amphitheater</p>
-            </div>
-        </div>
+    <div class="event-card">
+      <img src="assets/images/externalband.jpg">
+      <div class="event-info">
+        <h3>External Band Performance</h3>
+        <p>⏰ 7:00 PM – 8:00 PM</p>
+        <p>📍 Stage</p>
+      </div>
+    </div>
 
-        <div class="events-grid" id="day2">
-            <div class="event-card">
-                <h3>Flash Mob</h3>
-                <p>Morning · Campus</p>
-            </div>
+  </div>
 
-            <div class="event-card">
-                <h3>DHWANI</h3>
-                <p>Auditorium</p>
-            </div>
+  <!-- ================= DAY 3 ================= -->
+  <div class="events-day" id="day3">
 
-            <div class="event-card">
-                <h3>Band Wars</h3>
-                <p>Evening · Open Stage</p>
-            </div>
-        </div>
+    <div class="event-card">
+      <img src="assets/images/hungergames.jpg">
+      <div class="event-info">
+        <h3>Hunger Games</h3>
+        <p>⏰ 8:30 AM – 9:30 AM</p>
+        <p>📍 Academic Building (1st Floor)</p>
+      </div>
+    </div>
 
-        <div class="events-grid" id="day3">
-            <div class="event-card">
-                <h3>Fashion Show</h3>
-                <p>Main Stage</p>
-            </div>
+    <div class="event-card">
+      <img src="assets/images/sharktank.jpg">
+      <div class="event-info">
+        <h3>I2IT Shark Tank (CXO)</h3>
+        <p>⏰ 9:30 AM – 11:30 AM</p>
+        <p>📍 Academic Block (A-121)</p>
+      </div>
+    </div>
 
-            <div class="event-card">
-                <h3>DJ Night</h3>
-                <p>Night · Amphitheater</p>
-            </div>
-        </div>
-    </section>
+    <div class="event-card">
+      <img src="assets/images/techquest.jpg">
+      <div class="event-info">
+        <h3>TechQuest</h3>
+        <p>⏰ 11:00 AM – 1:00 PM</p>
+        <p>📍 A-314</p>
+      </div>
+    </div>
 
-    <footer class="footer">
-        <p>Dhruva Fest 2026</p>
-        <p>International Institute of Information Technology, Pune</p>
-        <p class="credit">Made with &hearts; by Shara</p>
-    </footer>
+    <div class="event-card">
+      <img src="assets/images/ipl.jpg">
+      <div class="event-info">
+        <h3>IPL Auction</h3>
+        <p>⏰ 1:00 PM – 3:00 PM</p>
+        <p>📍 Academic Block (A-307)</p>
+      </div>
+    </div>
 
-    <script src="js/main.js"></script>
+    <div class="event-card">
+      <img src="assets/images/squidgame.jpg">
+      <div class="event-info">
+        <h3>Squid Game</h3>
+        <p>⏰ 1:00 PM – 4:00 PM</p>
+        <p>📍 Besides PPCRC</p>
+      </div>
+    </div>
+
+    <div class="event-card">
+      <img src="assets/images/dance.jpg">
+      <div class="event-info">
+        <h3>Dance Competition</h3>
+        <p>⏰ 5:00 PM – 7:00 PM</p>
+        <p>📍 Stage</p>
+      </div>
+    </div>
+
+    <div class="event-card">
+      <img src="assets/images/fashion.jpg">
+      <div class="event-info">
+        <h3>Fashion Show</h3>
+        <p>⏰ 7:00 PM – 7:30 PM</p>
+        <p>📍 Stage</p>
+      </div>
+    </div>
+
+    <div class="event-card">
+      <img src="assets/images/dj.jpg">
+      <div class="event-info">
+        <h3>DJ Night</h3>
+        <p>⏰ 7:30 PM – 8:30 PM</p>
+        <p>📍 Stage</p>
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- ================= JS ================= -->
+<script>
+function showDay(day) {
+  document.querySelectorAll('.events-day').forEach(d => d.classList.remove('active-day'));
+  document.querySelectorAll('.day-btn').forEach(b => b.classList.remove('active'));
+
+  document.getElementById('day' + day).classList.add('active-day');
+  document.querySelectorAll('.day-btn')[day - 1].classList.add('active');
+}
+</script>
+
 </body>
 </html>

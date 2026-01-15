@@ -74,3 +74,24 @@ document.getElementById("studentBtn")?.addEventListener("click", () => {
         behavior: "smooth"
     });
 });
+const studentBtn = document.getElementById("studentBtn");
+const facultyBtn = document.getElementById("facultyBtn");
+
+const studentsSection = document.getElementById("students-section");
+const facultySection = document.getElementById("faculty-section");
+
+studentBtn?.addEventListener("click", () => {
+  studentsSection.classList.add("active");
+  facultySection.classList.remove("active");
+
+  studentBtn.classList.add("active");
+  facultyBtn.classList.remove("active");
+});
+
+facultyBtn?.addEventListener("click", () => {
+  facultySection.classList.add("active");
+  studentsSection.classList.remove("active");
+
+  facultyBtn.classList.add("active");
+  studentBtn.classList.remove("active");
+});
