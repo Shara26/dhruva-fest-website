@@ -1,97 +1,53 @@
-const teamData = {
-  "Dhruva Coordinator": [
-    "Rushikesh Patil"
-  ],
+document.addEventListener("DOMContentLoaded", () => {
 
-  "Cultural Coordinator": [
-    "Aishwarya Kokate",
-    "Abhishek Patil"
-  ],
+  const studentBtn = document.getElementById("studentBtn");
+  const facultyBtn = document.getElementById("facultyBtn");
 
-  "Technical Coordinator": [
-    "Atharva Hegade",
-    "Rajat Kulkarni"
-  ],
+  const studentsSection = document.getElementById("students-section");
+  const facultySection = document.getElementById("faculty-section");
 
-  "Finance Coordinator": [
-    "Kalash Malge"
-  ],
+  if (!studentBtn || !facultyBtn || !studentsSection || !facultySection) {
+    console.error("Team page elements missing");
+    return;
+  }
 
-  "Sponsorship Coordinator": [
-    "Ninad Waskar",
-    "Padmavati Koppad"
-  ],
+  studentBtn.addEventListener("click", () => {
+    studentsSection.classList.add("active");
+    facultySection.classList.remove("active");
 
-  "Anchoring Coordinator": [
-    "Om Talape",
-    "Kaveri Gavare"
-  ],
+    studentBtn.classList.add("active");
+    facultyBtn.classList.remove("active");
+  });
 
-  "Decoration": [
-    "Pratiksha Sathe",
-    "Ketan Kabade"
-  ],
+  facultyBtn.addEventListener("click", () => {
+    facultySection.classList.add("active");
+    studentsSection.classList.remove("active");
 
-  "Stage Management": [
-    "Daresh Andholkar"
-  ],
+    facultyBtn.classList.add("active");
+    studentBtn.classList.remove("active");
+  });
 
-  "Graphics": [
-    "Atharva Tidke"
-  ],
+});
 
-  "Advertisement / Social Media": [
-    "Abhijeet Shinde",
-    "Vipul Patil"
-  ],
+let autoScrollActive = true;
+let scrollSpeed = 0.3; // VERY slow (increase to 0.5 if you want faster)
 
-  "Discipline": [
-    "Sanchit Rathod"
-  ],
+function autoScroll() {
+  if (!autoScrollActive) return;
 
-  "Stall Management": [
-    "Ruturaj Vichare"
-  ]
-};
+  window.scrollBy(0, scrollSpeed);
 
-const container = document.getElementById("team-content");
+  if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+    autoScrollActive = false;
+    return;
+  }
 
-for (const role in teamData) {
-    const section = document.createElement("div");
-    section.className = "team-role";
-
-    let html = `<h2>${role}</h2>`;
-    teamData[role].forEach(name => {
-        html += `<p>${name}</p>`;
-    });
-
-    section.innerHTML = html;
-    container.appendChild(section);
+  requestAnimationFrame(autoScroll);
 }
 
-document.getElementById("studentBtn")?.addEventListener("click", () => {
-    document.getElementById("team-content").scrollIntoView({
-        behavior: "smooth"
-    });
-});
-const studentBtn = document.getElementById("studentBtn");
-const facultyBtn = document.getElementById("facultyBtn");
+requestAnimationFrame(autoScroll);
 
-const studentsSection = document.getElementById("students-section");
-const facultySection = document.getElementById("faculty-section");
+window.addEventListener("wheel", () => autoScrollActive = false, { passive: true });
+window.addEventListener("touchstart", () => autoScrollActive = false);
+window.addEventListener("keydown", () => autoScrollActive = false);
 
-studentBtn?.addEventListener("click", () => {
-  studentsSection.classList.add("active");
-  facultySection.classList.remove("active");
-
-  studentBtn.classList.add("active");
-  facultyBtn.classList.remove("active");
-});
-
-facultyBtn?.addEventListener("click", () => {
-  facultySection.classList.add("active");
-  studentsSection.classList.remove("active");
-
-  facultyBtn.classList.add("active");
-  studentBtn.classList.remove("active");
-});
