@@ -8,41 +8,40 @@
 </head>
 <body>
 
-<!-- ================= NAVBAR ================= -->
 <nav class="navbar">
-  <ul class="nav-left">
-    <li><a href="index.html">Home</a></li>
-    <li><a href="proshows.html">Pro Shows</a></li>
-  </ul>
+  <div class="navbar-inner">
 
-  <div class="nav-logo">
-    <img src="assets/images/dhruva-logo.png" alt="Dhruva Logo">
+    <div class="nav-left">
+      <img src="assets/images/i2it-logo.png" class="nav-college-logo" alt="I2IT Logo">
+    </div>
+
+    <div class="nav-center">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="proshows.html" class="nav-link pro">Pro Shows</a>
+
+      <img src="assets/images/dhruva-logo.png" class="nav-dhruva-logo" alt="Dhruva Logo">
+
+      <a href="events.html" class="nav-link events">Events</a>
+      <a href="sponsors.html" class="nav-link">Sponsors</a>
+      <a href="team.html" class="nav-link active">Team</a>
+    </div>
+
   </div>
-
-  <ul class="nav-right">
-    <li><a href="events.html" class="glow">Events</a></li>
-    <li><a href="sponsors.html">Sponsors</a></li>
-    <li><a href="team.html">Team</a></li>
-  </ul>
 </nav>
 
-<!-- Cosmic Stars Background -->
 <div class="stars"></div>
 <div class="stars2"></div>
 <div class="stars3"></div>
 
-<!-- ================= EVENTS SECTION ================= -->
 <section class="events-section">
   <h1 class="events-title">Events</h1>
 
-  <!-- Day Tabs -->
   <div class="day-tabs">
     <button class="day-btn active" onclick="showDay(1)">Day 1 · 28 Jan</button>
     <button class="day-btn" onclick="showDay(2)">Day 2 · 29 Jan</button>
     <button class="day-btn" onclick="showDay(3)">Day 3 · 30 Jan</button>
   </div>
 
-  <!-- ================= DAY 1 ================= -->
   <div class="events-day active-day" id="day1">
 
     <div class="event-card">
@@ -119,7 +118,6 @@
 
   </div>
 
-  <!-- ================= DAY 2 ================= -->
   <div class="events-day" id="day2">
 
     <div class="event-card">
@@ -178,7 +176,6 @@
 
   </div>
 
-  <!-- ================= DAY 3 ================= -->
   <div class="events-day" id="day3">
 
     <div class="event-card">
@@ -257,7 +254,7 @@
 
 </section>
 
-<!-- ================= JS ================= -->
+
 <script>
 function showDay(day) {
   document.querySelectorAll('.events-day').forEach(d => d.classList.remove('active-day'));
@@ -267,6 +264,10 @@ function showDay(day) {
   document.querySelectorAll('.day-btn')[day - 1].classList.add('active');
 }
 </script>
+
+<footer class="site-footer">
+  <p>Made with <span class="heart">&hearts;</span> by <strong>Shara</strong></p>
+</footer>
 
 </body>
 </html>
