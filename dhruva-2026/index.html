@@ -9,6 +9,11 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
 
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+/>
+
 
 </head>
 <body>
@@ -40,83 +45,83 @@
 
 <div class="hero-video-overlay"></div>
 
-<div class="hero-center">
-    <a href="#" class="hero-btn">Sponsorship Brochure</a>
-    <a href="#" class="hero-btn">View Gallery</a>
-    <a href="#" class="hero-btn">Events Brochure</a>
-</div>
 
 <div class="hero-bottom-strip">
-    <div class="hero-dates">28–30 JANUARY 2026</div>
+  <div class="hero-dates">28–30 JANUARY 2026</div>
 
-    <div class="hero-slogans">
-        <span>ENGAGE</span>
-        <span>|</span>
-        <span>ENTHRAL</span>
-        <span>|</span>
-        <span>ENTERTAIN</span>
-    </div>
+  <span class="hero-sep">|</span>
 
-    <div class="hero-socials">
-        <i class="fab fa-facebook-f"></i>
-        <i class="fab fa-x-twitter"></i>
-        <i class="fab fa-instagram"></i>
-        <i class="fab fa-youtube"></i>
-    </div>
+  <div class="hero-slogans">
+    <span>ENGAGE</span>
+    <span>ENTHRAL</span>
+    <span>ENTERTAIN</span>
+  </div>
+
+  <span class="hero-sep">|</span>
+
+  <div class="hero-socials">
+    <a href="https://www.instagram.com/i2it.dhruva" target="_blank">
+      <i class="fab fa-instagram"></i>
+    </a>
+    <a href="https://linktr.ee/dhruva2026" target="_blank">
+      <i class="fa-solid fa-link"></i>
+    </a>
+  </div>
 </div>
 
-<section class="dhruva-timer">
-  <div class="timer-box">
-    <div class="time" id="days">00</div>
-    <span>Days</span>
-  </div>
-  <div class="timer-box">
-    <div class="time" id="hours">00</div>
-    <span>Hours</span>
-  </div>
-  <div class="timer-box">
-    <div class="time" id="minutes">00</div>
-    <span>Minutes</span>
-  </div>
-  <div class="timer-box">
-    <div class="time" id="seconds">00</div>
-    <span>Seconds</span>
+
+<section class="countdown-section">
+  <h2 class="countdown-title">Dhruva Begins In</h2>
+
+  <div class="countdown">
+    <div class="time-box">
+      <span id="days">00</span>
+      <small>Days</small>
+    </div>
+
+    <div class="time-box">
+      <span id="hours">00</span>
+      <small>Hours</small>
+    </div>
+
+    <div class="time-box">
+      <span id="minutes">00</span>
+      <small>Minutes</small>
+    </div>
+
+    <div class="time-box">
+      <span id="seconds">00</span>
+      <small>Seconds</small>
+    </div>
   </div>
 </section>
+
 
 <section class="about-dhruva reveal">
-  <div class="about-left">
-    <p>
-      Dhruva is the official Technical & Cultural Fest of I2IT Pune, bringing together
-      <span class="fall creativity">creativity</span>,
-      <span class="fall innovation">innovation</span>, music, dance, and celebration.
-      It is a student-driven fest that celebrates
-      <span class="fall talent">talent</span>,
-      <span class="fall passion">passion</span>, and
-      <span class="fall unity">unity</span>.
-    </p>
-  </div>
+  <div class="about-wrapper">
 
-  <div class="about-right">
-    <div class="event-item">
-      <span class="icon">🎵</span>
-      <span class="label">Music</span>
+    <div class="about-left">
+      <p>
+        Dhruva is the official Technical & Cultural Fest of I2IT Pune, bringing together
+        <span class="fall creativity">creativity</span>,
+        <span class="fall innovation">innovation</span>, music, dance, and celebration.
+        It is a student-driven fest that celebrates
+        <span class="fall talent">talent</span>,
+        <span class="fall passion">passion</span>, and
+        <span class="fall unity">unity</span>.
+      </p>
     </div>
-    <div class="event-item">
-      <span class="icon">💃</span>
-      <span class="label">Dance</span>
+
+    <div class="about-right">
+      <img
+        src="assets/images/dhruva-logo.png"
+        alt="Dhruva Logo"
+        class="about-dhruva-logo"
+      >
     </div>
-    <div class="event-item">
-      <span class="icon">🎭</span>
-      <span class="label">Drama</span>
-    </div>
-    <div class="event-item">
-      <span class="icon">💡</span>
-      <span class="label">Tech</span>
-    </div>
+
   </div>
 </section>
-
 
 
 
@@ -125,7 +130,7 @@
   <div class="see-you">See you at</div>
 
   <h1 class="dhruva-text" data-text="DHURVA 26">
-    DHURVA 26
+    DHRUVA 26
   </h1>
 </section>
 
@@ -174,9 +179,9 @@
 
   observer.observe(reveal);
 </script>
+<script src="js/timer.js"></script>
 
 
 </body>
 </html>
 
-<!-- minor update -->
