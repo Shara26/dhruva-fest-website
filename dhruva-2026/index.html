@@ -20,21 +20,31 @@
 <nav class="navbar">
   <div class="navbar-inner">
 
-    <div class="nav-left">
-      <img src="assets/images/i2it-logo-transparent.png" class="nav-college-logo" alt="I2IT Logo">
-    </div>
-
-    <div class="nav-center">
+    <div class="nav-left desktop-only">
       <a href="index.html" class="nav-link">Home</a>
       <a href="proshows.html" class="nav-link pro">Pro Shows</a>
-
-      <img src="assets/images/dhruva-logo.png" class="nav-dhruva-logo" alt="Dhruva Logo">
-
-      <a href="events.html" class="nav-link events">Events</a>
-      <a href="sponsors.html" class="nav-link">Sponsors</a>
-      <a href="team.html" class="nav-link active">Team</a>
     </div>
 
+    <div class="nav-logo">
+      <img src="assets/images/dhruva-logo.png" class="nav-dhruva-logo" alt="Dhruva Logo">
+    </div>
+
+    <div class="nav-right desktop-only">
+      <a href="events.html" class="nav-link events">Events</a>
+      <a href="sponsors.html" class="nav-link">Sponsors</a>
+      <a href="team.html" class="nav-link">Team</a>
+    </div>
+
+    <div class="nav-toggle mobile-only" id="navToggle">☰</div>
+
+  </div>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html">Home</a>
+    <a href="proshows.html">Pro Shows</a>
+    <a href="events.html">Events</a>
+    <a href="sponsors.html">Sponsors</a>
+    <a href="team.html">Team</a>
   </div>
 </nav>
 
@@ -132,7 +142,7 @@
 <section class="dhruva-hero">
   <div class="see-you">See you at</div>
 
-  <h1 class="dhruva-text" data-text="DHURVA 26">
+  <h1 class="dhruva-text" data-text="DHRUVA 26">
     DHRUVA 26
   </h1>
 </section>
@@ -183,6 +193,9 @@
   observer.observe(reveal);
 </script>
 <script src="js/timer.js"></script>
+
+
+<script src="js/navbar.js"></script>
 
 
 </body>
